@@ -1,0 +1,355 @@
+header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+section {
+    padding-top:3rem;
+    padding-bottom: 3rem;
+}
+
+section h1 {
+    padding-bottom: 3rem;
+}
+
+h1, .card-title, h3, h4, .nav-link {
+   font-family: 'Raleway', sans-serif;
+}
+
+p, .formulario {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.datos span {
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+}
+
+.datos span:nth-child(1) {
+    font-size: 1.6rem;
+}
+
+.btn-outline-dark {
+    font-family: 'Raleway' , sans-serif;
+}
+
+.btn-lg {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-dark:hover {
+    background-color:#06111C;
+    border-color: transparent;
+}
+
+
+hr {
+    border-color: white;
+    color: white;
+}
+
+.navbar {
+    background-color: #06111C;
+    
+}
+
+#quienesSomos {
+    background-color: #06111C;
+}
+
+.profesion {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+
+#navbarNavDropdown {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+    background-color: white;
+}
+
+.special-card {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#asesoramiento {
+    background-image: url(./video/images/Servicios/Asesoramiento_desktop.jpg);
+    opacity: 0;
+}
+
+#diseno {
+    background-image: url(./video/images/Servicios/diseo%20desktop.JPG);
+    opacity: 0;
+}
+
+#produccion {
+    background-image: url(./video/images/Servicios/produccion_desktop.JPG);
+    opacity: 0;
+}
+
+#instalacion {
+    background-image: url(./video/images/Servicios/instalacion_desktop.JPG);
+    opacity: 0;
+}
+
+@media (max-width:767px) {
+    .special-card {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #asesoramiento {
+        background-image: url(./video/images/Servicios/Asesoramiento_tablet.jpg);
+    }
+
+    #diseno {
+        background-image: url(./video/images/Servicios/diseo%20mobile.JPG);
+    }
+
+    #produccion {
+        background-image: url(./video/images/Servicios/produccion_mobile.JPG);
+    }
+
+    #instalacion {
+        background-image: url(./video/images/Servicios/instalacion_mobile.JPG);
+    }
+
+
+    #ver-mas {
+        margin-top: 1rem;
+    }
+
+    #nuestros-proyectos {
+        margin-top: 1rem;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    #ver-mas p {
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+
+    #nuestros-proyectos p {
+        text-align: left;
+        padding-top: 1.5rem;
+    }
+    
+    .inverted {
+        display: flex;
+        flex-flow: wrap-reverse;
+    }
+
+    #asesoramiento {
+        background-image: url(./video/images/Servicios/Asesoramiento_tablet.jpg);
+    }
+
+    #diseno {
+        background-image: url(./video/images/Servicios/diseo%20tablet.JPG);
+    }
+
+    #produccion {
+        background-image: url(./video/images/Servicios/produccion_tablet.JPG);
+    }
+
+    #instalacion {
+        background-image: url(./video/images/Servicios/instalacion_tablet.JPG);
+    }
+    
+
+
+}
+
+@media(min-width: 992px) {
+    #ver-mas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nuestros-proyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+#enviar {
+    float: right;
+}
+
+#contacto {
+    background-color: #06111C;
+    color: white;
+}
+
+.half-block {
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+}
+
+.half-block .inner {
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    transition-property: background-color;
+    transition-duration: .4s;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: .4s;
+}
+
+.half-block .inner:hover {
+    background-color: rgba(27, 23, 28, 0.8);
+}
+
+.half-block p {
+    padding: 20px 5px 0px 5px;
+    text-align: center;
+    color: white;
+}
+
+.half-block h4 {
+    font-weight: normal;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    display: block;
+    letter-spacing: 2px;
+    padding: 0 0 10px 0;
+}
+
+.animated {
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.flip {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: flip;
+    animation-name: flip;
+}
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(1000px) rotateY(20deg);
+        transform: perspective(1000px) rotateY(20deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: perspective(1000px) rotateY(0deg);
+        transform: perspective(1000px) rotateY(0deg);
+        opacity: 1
+    }
+}
+
+@keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(1000px) rotateY(20deg);
+        transform: perspective(1000px) rotateY(20deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: perspective(1000px) rotateY(0deg);
+        transform: perspective(1000px) rotateY(0deg);
+        opacity: 1
+    }
+}
+
+.flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+.footer {
+    color: white;
+    padding: 30px 0;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    line-height: 2;
+
+}
+
+@media (max-width: 575px) {
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .datos {
+        padding-top: 20px;
+    }
+    
+    .footer .redes a{
+        padding: 0 5px;
+    }
+
+    .redes {
+        padding: 0 85px;
+    }
+}
+ 
+#proyectos {
+
+ background: linear-gradient(to bottom, #06111C, #0c2135);
+}
+
+#proyectos h5 {
+    color:white;
+}
+
+#staff .card-deck .card{
+    background-color: transparent;
+}
+
+.card-group .card-body {
+    padding: 0 0 1.5rem 0;
+}
+
+.jumbotron {
+    background-image: url(./video/images/background\ jumbotron.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #06111C;
+}
+
