@@ -5,4 +5,4 @@ El sitio esta desarrollado para verse de forma responsiva.
 
 Herramientas de desarrollo utilizadas: html, css, bootstrap.
 
-Archivo para ver el sitio: index.html
+Archivo para ver el sitio: dillion/index.html
